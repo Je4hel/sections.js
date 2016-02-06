@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+section, #scrollTop {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: "Segoe UI Light";
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+section#s1 {
+    background-color: darkorchid;
+}
+
+section#s2 {
+    background-color: darkgreen;
+}
+
+section#s3 {
+    background-color: darkcyan;
+}
+
+#scrollTop {
+    position: fixed;
+    bottom: -10%;
+    height: 10%;
+    
+    font-family: "Segoe UI";
+    font-size: 1.5em;
+    text-transform: uppercase;
+    
+    background-color: rgba(200, 200, 200, 0.2);
+    
+    cursor: pointer;
+}
+
+#scrollTop p {
+    margin: 0 0;
+}
+
+#sections-menu {
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    
+    font-family: "Segoe UI";
+    font-size: 0.7em;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    
+    z-index: 1000;
+}
+
+#sections-menu li {
+    margin: 5px 0;
+    padding: 5px 10px;
+    
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    
+    cursor: pointer;
+}
+
+#sections-menu li.active {
+    color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
+}
